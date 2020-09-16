@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>online books store</title>
+        <style>
+            a{
+                text-decoration: none;
+                color: black;   
+                
+            }
+            .appbar{
+                display: inline-flex;
+            }
+            .menu a{
+                color: white;
+                padding-left: 75px;
+            }
+            .menu a:hover{
+                color: red;
+            }
+            button:hover{
+                color: cornflowerblue;
+            }
+            .menu{
+                background-color: rgb(58, 158, 58);
+                display: block;
+                padding-left: 350px; 
+                margin:-9px;
+                margin-top: -50px;
+                padding-top: 20px;
+                padding-bottom: 70px;
+                
+            }
+            .home
+            {
+                text-align: center;
+                display: flex;
+                margin-left: 75px;
+                margin-top: -50px;
+                background-image: url(https://images.theconversation.com/files/45159/original/rptgtpxd-1396254731.jpg?ixlib=rb-1.1.0&q=45&auto=format&w=1356&h=668&fit=crop);
+            }
+            .home div{
+                margin-left: 250px;
+                padding: 75px;
+                margin-top: 30px;
+                margin-bottom: 10px;
+            }
+            
+            .home div p,span{
+                margin-bottom: 10px;
+                color: white;
+            }
+            .books{
+                display: inline-flex;
+                margin-left: 350px;
+                margin-top: 25px;
+                border: 3px solid black;
+                background: #636363;  /* fallback for old browsers */
+                background: -webkit-linear-gradient(to right, #a2ab58, #636363);  /* Chrome 10-25, Safari 5.1-6 */
+                background: linear-gradient(to right, #a2ab58, #636363); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */;
+            }
+            .new{
+                display: flex;
+                margin:50px;
+                margin-left: 300px;
+                margin-right: 300px;
+            }
+            .release{
+                display: flex;
+            }
+            .release button{
+                width: 100px;
+            }
+            .new img{
+                width: 200px;
+                height: 300px;
+                padding-left: 10px;
+            }
+            .cols img{
+                width: 300px;
+                height: 400px;
+                margin: 50px;
+                margin-bottom: 0px;
+            }
+            .cols h1,button{
+                margin-left:150px;
+                margin-bottom: 10px;
+                margin-top: 0px;
+            }
+            
+        </style>
+    </head> 
+    <body>
+        <div class="appbar" id="appbar">
+            <img src="assests/books-icon.jpg" alt="" width="2%" height="2%" style="margin-left: 350px; margin-top: 5px;">
+            <iframe src="title.html" style="border:none;" ></iframe>
+            <input type="text" placeholder="    Search   By   Author,  Title,   Keyword..." style="width: 500px; height: 40px;margin-top: 5px; border-radius: 10px;">
+            <a href="#" style="width: 100px;height: 30px; border: none; background-color: white; margin-top:7px;margin-left:125px;">
+                <img src="assests/like.png"  width="100%" style="max-width: 35%;"> 
+                <b>Wishlist</b>
+            </a>
+            <a href="shoppingcart.html" style="width: 70px;height: 30px; border: none; background-color: white; margin-top:7px;margin-left:75px;">
+                <img src="assests/cart-icon.png"  width="100%" style="max-width: 45%;"> 
+                <b>Cart</b>
+            </a>
+        </div>
+        <div class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a href="#">Authors</a>
+            <a href="#" class="dropdown">All Categories</a>
+            <a href="#">BestSelling</a>
+            <a href="#new">Latest Release</a>
+            <a href="#">Contact</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="user.html">User</a>
+            <a href="title.html">Help?</a>
+        </div>
+        <div class="home" id="home">
+            <div>
+                <p>Books We Have</p>
+                <hr>
+                <span>54,711,652</span>
+            </div>
+            <div>
+                <p>Total Members</p>
+                <hr>
+                <span>17,673,999</span>
+            </div>
+            <div>
+                <p>Books Sold</p>
+                <hr>
+                <span>1,754,908,516</span>
+            </div>
+        </div>
+        <div class="books" id="books">
+            <div class="rows">
+                <div class="cols">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcQ1VDmGH8L-7LF04xDYIuJPSAaHs9eQfpD0TA&usqp=CAU" alt="photo">
+                    <h1>$21.89</h1>
+                    <button>add to cart</button>
+                </div>
+               
+                <div class="cols">
+                    <img src="https://d1csarkz8obe9u.cloudfront.net/posterpreviews/winter-romantic-novel-kindle-cover-template-design-5292d4878b0d706a8b551659f661015f.jpg?ts=1561423472" alt="photo">
+                    <h1>$8.43</h1>
+                    <button>add to cart</button>
+                </div>
+            </div>
+            <div class="rows">
+                <div class="cols">
+                   <img src="https://media.harrypotterfanzone.com/deathly-hallows-us-childrens-edition.jpg" alt="photo">
+                    <h1>$11.99</h1>
+                    <button>add to cart</button>
+                </div>
+                <div class="cols">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcSf5Sdz0eTrYR-yMh-m7oHSqi3R-mQMJ0A8ow&usqp=CAU" alt="photo">
+                    <h1>$17.17</h1>
+                    <button>add to cart</button>
+                </div>
+                <div class="cols" style="padding-top: 20px;"><button>View More>></button></div>
+            </div>
+            <div class="rows">
+                <div class="cols">
+                   <img src="https://cdn.pastemagazine.com/www/articles/SongofIceandFire.jpg" alt="photo">
+                    <h1>$22.99</h1>
+                    <button>add to cart</button>
+                </div>
+                <div class="cols">
+                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn%3AANd9GcTl7tYLgvfOMa7b03fKNH3ap_o6MC3UT3cQdw&usqp=CAU" alt="photo">
+                    <h1>$25.99</h1>
+                    <button>add to cart</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="new" id="new">
+            <div>
+                <span style="color: black;">Taste the New Spice</span>
+                <h1>New Release Books</h1><br><hr><br>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Laborum at similique voluptatibus dolorum assumenda distinctio est saepe, corporis tenetur impedit maxime minima, facere nemo cumque explicabo eum tempore dolorem! Ducimus.
+                </p>
+                <div class="release">
+                    <div><button>View all</button></div>
+                    <div><button>Read More</button></div>
+                </div>
+            </div>
+            <div>
+                <img src="https://images-na.ssl-images-amazon.com/images/I/71CAYMpbwOL.jpg" alt="photo">
+            </div>
+            <div>
+                <img src="https://m.media-amazon.com/images/I/410DW4jYnRL.jpg" alt="photo">
+            </div>
+            <div>
+                <img src="https://d243y1uga1q3sn.cloudfront.net/assets/files/345742/the-finishing-school-paperback-cover-9781782117575.jpg" alt="photo">
+            </div>
+        </div>
+
+    </body>
+</html>
+

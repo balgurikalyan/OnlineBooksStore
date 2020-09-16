@@ -1,0 +1,91 @@
+<html>
+    <head><title>online books store</title>
+        <style>
+            h1{
+                text-align: center;
+            }
+            a{
+                color: black;
+                text-decoration: none;
+            }
+            .menu a{
+                color: white;
+                margin-left: 50px;
+            }
+            .menu a:hover{
+                color: red;
+            }
+            .menu{
+                background-color: rgb(58, 158, 58);
+                display: block; 
+                margin-left: -10px; 
+                margin-right: -10px;
+                padding-left: 400px;
+                padding-top: 20px; 
+                padding-bottom: 20px;             
+            }
+            .order{
+                text-align: center;
+            }
+            
+            .user{
+                border: 1px solid black;
+                border-radius: 5%;
+                margin-right: 800px;
+            }
+            .user h3,span{
+                display: flex;
+                padding-left: 100px;
+                padding-bottom: 10px;
+            }
+            .dropdown{
+                margin-bottom: 20px;
+            }
+            .dropdown p{
+                font-weight: bold;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="menu" id="menu">
+            <a href="index.html">Home</a>
+            <a href="#">Authors</a>
+            <a href="#">All Categories</a>
+            <a href="#">BestSelling</a>
+            <a href="#new">Latest Release</a>
+            <a href="#">Contact</a>
+            <a href="login.html">Login</a>
+            <a href="register.html">Register</a>
+            <a href="user.html">User</a>
+            <a href="title.html">Help?</a>
+        </div>
+        <div class="heading">
+            <h1>Order Conformation</h1>
+        </div>
+        <div class="order">
+            <div class="rows">
+                <div class="cols">
+                    <h3>Paywith</h3>
+                    <p><button>pay on delivery</button> Or <button><a href="payment.html">Credit card</a></button></p>
+                    <div class="dropdown">
+                        <p>Add Gift Card Or Promo Code</p>
+                        <div class="droptdown-content">
+                            <input type="text" placeholder="Enter Code">
+                            <button>Apply</button>
+                        </div>
+                    </div>
+                    <div class="user" id="user" style="margin-left: 800px;">
+                        <h3>Delivery to ></h3>
+                        <span>DD Colony</span>
+                        <span>Amberpet,Hyderabad</span>
+                        <span>Telangana,500001</span>
+                        <button style="margin-bottom: 10px;">Edit Address</button>
+                    </div>
+                    <div class="proceed" style="margin-top: 20px;">
+                        <button>Place Your Order</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
